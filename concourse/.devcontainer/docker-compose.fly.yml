@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  fly:
+    image: fly-concourse
+    build:
+      context: .
+      dockerfile: Fly.Dockerfile
+
+    volumes:
+      - ..:/workspace:cached
+
+    command: /bin/sh -c "while sleep 1000; do :; done"

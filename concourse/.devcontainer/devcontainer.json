@@ -1,0 +1,14 @@
+{
+	"name": "Concourse Quickstart",
+	"dockerComposeFile": ["docker-compose.yml", "docker-compose.fly.yml"],
+	"service": "fly",
+	"workspaceFolder": "/workspace",
+
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/sh"
+	},
+
+	"extensions": [],
+
+	"forwardPorts": [8080],
+}
